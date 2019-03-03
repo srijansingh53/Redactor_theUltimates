@@ -1,0 +1,264 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta character="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale-1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+  body {
+    padding: 0;
+    margin: 0;
+    font-family: verdana;
+  }
+
+  .container {
+    background-color: #f1e7fe;
+    height: 100vh;
+
+  }
+
+
+.titlei{
+  padding-left: 40px;
+  font-size: 50px;
+}
+
+
+
+.button {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button1 {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  margin-left: 150px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+.button1 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button1 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button1:hover span {
+  padding-right: 25px;
+}
+
+.button1:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+.image{
+  height: 148px;
+  border-radius: 50%;
+}
+
+
+  .title-bar {
+    display: flex;
+    height: 25vh;
+    background-color: rgba(103, 65, 114, 1);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 14px;
+    color: white;
+    box-shadow: 0 1px 2px 2px rgba(0, 0, 0, 0.1);
+    align-items: center;
+  }
+
+
+  .title-bar p {
+    margin: 0;
+    padding: 0;
+  }
+
+  .row {
+    height: 70vh;
+    width: 100vw;
+  }
+
+  .column1{
+    width: 80vw;
+    background-color: rgba(103, 65, 114, 1);
+  }
+  .column2{
+    width: 20vw;
+  }
+
+  .split2 {
+    height: 70%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    overflow-x: hidden;
+    padding-top: 0px;
+    bottom:0;
+    margin-top: 100px;
+    background-color: #f1e7fe;
+  }
+  .left {
+    left: 0;
+    /*background-color: #111;*/
+  }
+
+  /* Control the right side */
+  .right {
+    right: 0;
+    background-color: rgba(103, 65, 114, 1);
+
+  }
+  .titlei{
+  padding-left: 40px;
+  font-size: 50px;
+}
+
+
+
+  /* If you want the content centered horizontally and vertically */
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  /* Style the image inside the centered container, if needed */
+  .centered img {
+    width: 150px;
+    border-radius: 50%;
+  }
+
+  .sblock1{
+    position:relative;
+    display:inline-block;
+    width:45%;
+    /*height: 75vh;*/
+    /*height:505.675px;*/
+    height:80%;
+    /*background-color: green;*/
+    margin-left: 10px;
+    float:left;
+  }
+
+
+  .sblock2{
+    position: relative;
+    display:inline-block;
+    height:80%;
+    /*background-color:blue;*/
+    /*height: 75vh;*/
+
+    margin-left: 40px;
+
+    /*margin-left: 10%;*/
+  }
+
+  .sblock2i{
+    font-size: 40px;
+    pa:auto,0px,auto,0px;
+    position:absolute;
+    bottom: 330px;
+
+
+  }
+
+  .sblock3{
+    position: relative;
+    display:inline-block;
+    width:45%;
+    height:80%;
+    /*background-color: red;*/
+    /*height: 75vh;*/
+    top:0px;
+    float:right;
+    /*margin-left: 10%;*/
+  }
+
+  .sblock3i{
+    position: absolute;
+    left:100px;
+    font-size: 30px;
+
+  }
+
+  </style>
+
+  </head>
+  <body class="bblock">
+    <div class="title-bar">
+        <div class="titlei">
+          Your Privacy,our Responsibility
+        </div></div>
+    <div class="tblock" style="margin-top:200px;;margin-right:300px;margin-left:300px;" >
+    <form method="post">
+      {% csrf_token %}
+      {{form}}
+      </form>
+    </div>
+      </body>
+      </html>

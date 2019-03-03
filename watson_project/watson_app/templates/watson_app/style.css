@@ -1,0 +1,149 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: verdana;
+}
+
+.container {
+  background-color: #f1e7fe;
+  height: 100vh;
+
+}
+
+.title-bar {
+  display: flex;
+  height: 25vh;
+  background-color: rgba(103, 65, 114, 1);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 14px;
+  color: white;
+  box-shadow: 0 1px 2px 2px rgba(0, 0, 0, 0.1);
+  align-items: center;
+}
+
+
+.title-bar p {
+  margin: 0;
+  padding: 0;
+}
+
+.row {
+  height: 70vh;
+  width: 100vw;
+}
+
+.column1{
+  width: 80vw;
+  background-color: rgba(103, 65, 114, 1);
+}
+.column2{
+  width: 20vw;
+}
+
+.split2 {
+  height: 70%;
+  width: 77%;
+  position: fixed;
+  z-index: 1;
+  overflow-x: hidden;
+  padding-top: 0px;
+  bottom:0;
+  margin-top: 100px;
+  background-color: #f1e7fe;
+}
+.split1 {
+  height: 70%;
+  width: 20%;
+  position: fixed;
+  z-index: 1;
+  overflow-x: hidden;
+  padding-top: 20px;
+  bottom:0;
+  margin-top: 100px;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+  /*background-color: #111;*/
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  background-color: rgba(103, 65, 114, 1);
+
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Style the image inside the centered container, if needed */
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.sblock1{
+  position:relative;
+  display:inline-block;
+  width:45%;
+  /*height: 75vh;*/
+  /*height:505.675px;*/
+  height:500px;
+  /*background-color: green;*/
+  margin-left: 10px;
+  float:left;
+}
+
+
+.sblock2{
+  position: relative;
+  display:inline-block;
+  height:500px;
+  /*background-color:blue;*/
+  /*height: 75vh;*/
+
+  margin-left: 40px;
+
+  /*margin-left: 10%;*/
+}
+
+.sblock2i{
+  font-size: 40px;
+  pa:auto,0px,auto,0px;
+  position:absolute;
+  bottom: 330px;
+
+
+}
+
+.sblock3{
+  position: relative;
+  display:inline-block;
+  width:45%;
+  height:500px;
+  /*background-color: red;*/
+  /*height: 75vh;*/
+  top:0px;
+  float:right;
+  /*margin-left: 10%;*/
+}
+
+.sblock3i{
+  position: absolute;
+  left:100px;
+  font-size: 30px;
+
+}
